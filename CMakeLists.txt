@@ -11,7 +11,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
     add_compile_options(-Werror -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wsign-conversion -Wold-style-cast)
 endif()
 
-add_library(rsl
+add_library(rsl SHARED
     src/random.cpp
 )
 add_library(rsl::rsl ALIAS rsl)
