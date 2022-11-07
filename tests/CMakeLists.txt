@@ -4,11 +4,14 @@ find_package(Catch2 3.1.0 REQUIRED)
 find_package(range-v3 0.11.0 REQUIRED)
 
 add_executable(test-rsl
+    algorithm.cpp
     monad.cpp
     no_discard.cpp
     overload.cpp
     queue.cpp
     random.cpp
+    static_string.cpp
+    static_vector.cpp
     try.cpp)
 target_link_libraries(test-rsl PRIVATE
     rsl::rsl
